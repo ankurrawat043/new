@@ -1,0 +1,67 @@
+.card:hover{
+  background-color: #eee;
+}
+.navbar-nav > .nav-item > .active {
+  color: #198754;
+  border-bottom: 3px solid #198754;
+  border-radius: 3px;
+  
+}
+
+  @media screen and (min-width: 1280px){
+    .log  {
+      width: calc(100% - 144px);
+  }
+   
+
+  }
+  
+
+ .navbar-nav > .row >.active > span{
+  color: #198754;
+}
+ .navbar-nav > .row >.active > a{
+  color: #198754;
+}
+
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 40%;
+
+}
+
+.owl-prev {
+    left: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.owl-next {
+    right: 7px;
+    padding: 0;
+    margin: 0;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    color: rgb(19, 18, 18);
+    display: inline-block;
+    zoom: 1;
+    /* display: inline; */
+    margin: 5px;
+    padding: 3px 10px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background: rgba(202, 57, 57, 0.005);
+    filter: Alpha(Opacity=20);
+    opacity: .2
+}
+
+@media (min-width: 768px) { 
+  .slider {
+width: 80%;
+  } 
+}

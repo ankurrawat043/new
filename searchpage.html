@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Satta App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="s.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top p-0 m-0" style="background-color: white">
+            <div class="container-fluid my-0">
+
+                <a class="navbar-brand m-0 my-0 mobile-view d-block d-md-none" href="#"><img src="images/new.svg"
+                        alt="My Happy SVG" width="200" height="50" /></a>
+                <a class="navbar-brand m-0 ps-2 web-view d-none d-lg-block" href="#"><img src="images/new.svg"
+                        alt="My Happy SVG" width="170" height="55" /></a>
+                <div class="collapse navbar-collapse mt-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link me-2 pb-3" href="#">Games</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active me-2 pb-3" href="#">Apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2 pb-3" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2 pb-3" href="#">Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2 pb-3" href="#">Childern</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="row">
+
+
+                    <form class="col" role="search">
+
+                        <a type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></a>
+
+                    </form>
+                    <a href="" class=" col"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                        </svg></a>
+                    <a href="" class=" col"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- extra nav -->
+        <div class="mobile-view d-block d-md-none ">
+
+            <nav class="navbar fixed-bottom bg-body-tertiary">
+                <div class="container-fluid">
+                    <ul class="navbar-nav  ">
+                        <div class="row text-center">
+                            <li class="nav-item col">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-controller" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z" />
+                                        <path
+                                            d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z" />
+                                    </svg></span>
+                                <a class="nav-link fw-bold p-0" href="#">Games</a>
+                            </li>
+                            <li class="nav-item col active">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-ui-checks-grid" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-3zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-3zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-3zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0l2-2z" />
+                                    </svg></span>
+                                <a class="nav-link fw-bold  p-0" href="#">Apps</a>
+                            </li>
+                            <li class="nav-item col">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-film" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z" />
+                                    </svg></span>
+                                <a class="nav-link fw-bold  p-0" href="#">Movies</a>
+                            </li>
+                            <li class="nav-item col">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z" />
+                                        <path
+                                            d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
+                                        <path
+                                            d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
+                                    </svg></span>
+                                <a class="nav-link fw-bold  p-0" href="#">Books</a>
+                            </li>
+                            <li class="nav-item col">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-star" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                                    </svg></span>
+                                <a class="nav-link fw-bold  p-0" href="#">Childern</a>
+                            </li>
+                        </div>
+
+                    </ul>
+
+
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <div class="row my-5 ">
+            <div class="col-md-8">
+                <h4 class=" mt-5 ml-1">Google Play Store Apps</h4>
+                <div class="row ">
+                    <div class="col-md-6 col-12">
+                        <div class="card my-3 p-2" style="border: hidden;">
+                            <img src="images/3.png" class="card-img-top shadow " width="60" height="190" alt="..."
+                                style="border-radius: 10px;">
+                            <div class="card-body p-0 mt-3">
+                                <div class="row p-0">
+                                    <div class="col-3 ">
+                                        <img src="images/2.webp" class="card-img shadow mx-0 p-0" height="64" width="64"
+                                            style="border-radius: 20%;" alt="...">
+                                    </div>
+                                    <div class="col-9 mx-0">
+                                        <h6 class="card-title m-0">Bhawani Matka App</h6>
+                                        <p class="card-text m-0"></p>
+                                        <p class="card-text"><small class="text-body-secondary">4.8 <span><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="8" height="8"
+                                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                    </svg></span></small></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer start -->
+        <footer class="mb-5 pb-2">
+            <div class="container mx-auto foot m-0 p-0" style=" border-top: 1px solid rgb(228, 224, 224);">
+                <div class="row mb-5">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-6 mb-5 mt-3 text-start">
+                                        <div class="widget_menu">
+                                            <ul style=" list-style-type: none;">
+                                                <h6 style="color: dimgray;">google play</h6>
+                                                <li><a class="nav-link" href="https://play.google.com/about/play-pass"
+                                                        style="color: dimgray;">Play pass</a></li>
+                                                <li><a class="nav-link"
+                                                        href="https://play.google.com/store/points/enroll"
+                                                        style="color: dimgray;">Play point</a></li>
+                                                <li><a class="nav-link" href="https://play.google.com/about/giftcards"
+                                                        style="color: dimgray;">Gift cards</a></li>
+                                                <li><a class="nav-link" href="https://play.google.com/redeem"
+                                                        style="color: dimgray;">Redeem</a></li>
+                                                <li><a class="nav-link"
+                                                        href="https://support.google.com/googleplay/answer/134336"
+                                                        style="color: dimgray;">Refund Policy</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-5 mt-3">
+                                        <div class="widget_menu">
+                                            <ul style=" list-style-type: none;">
+                                                <h6 style="color: dimgray;">Children And Family</h6>
+                                                <li class="lh-4"><a class="nav-link"
+                                                        href="https://support.google.com/googleplay?p=pff_parentguide"
+                                                        style="color: dimgray;">Parent
+                                                        guide</a></li>
+                                                <li><a class="nav-link"
+                                                        href="https://support.google.com/googleplay/answer/7007852"
+                                                        style="color: dimgray;">Family Sharing</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" row mb-4 ps-2">
+                    <div class="col-md-10 col">
+                        <ul class="d-flex" style=" list-style-type: none;">
+                            <div class="row container align-items-start">
+                                <div class="col-4 col-md-2">
+                                    <li>
+                                        <a class="nav-link"
+                                            href="https://play.google.com/intl/en-IN_in/about/play-terms.html">
+                                            <p style="font-size: 12px;color: dimgray;">Terms of service</p>
+                                        </a>
+                                    </li>
+
+                                </div>
+                                <div class="col-4 col-xl-2">
+
+                                    <li>
+                                        <a class="nav-link" href="https://policies.google.com/privacy">
+                                            <p style="font-size: 12px;color: dimgray;">Privacy</p>
+
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="col-4 col-xl-2">
+                                    <li>
+                                        <a class="nav-link" href="https://support.google.com/googleplay/?p=about_play">
+                                            <p style="font-size: 12px;color: dimgray;">About Google Play</p>
+
+                                        </a>
+                                    </li>
+
+                                </div>
+                                <div class="col-4 col-xl-2">
+                                    <li>
+                                        <a class="nav-link" href="http://developer.android.com/index.html">
+                                            <p style="font-size: 12px;color: dimgray;">Developers</p>
+
+                                        </a>
+                                    </li>
+
+                                </div>
+                                <div class="col-4 col-xl-2">
+
+                                    <li>
+                                        <a class="nav-link" href="https://store.google.com/?playredirect=true">
+                                            <p style="font-size: 12px;color: dimgray;">Google Store</p>
+
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="col-4 col-xl-2">
+                                    <li>
+                                        <p style="font-size: 12px;color: dimgray;">All Prices include GST.</p>
+
+                                    </li>
+                                </div>
+
+                            </div>
+                            </ul>
+
+
+
+                    </div>
+                    <div class="col-md-2 text-center">
+
+                        <p class="flex-end " style="font-size: 14px;color: dimgray;"><img src="images/2.svg" alt=""
+                                height="24" width="29" class="pe-2">India(English(india))</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                $('ul.navbar-nav > li > a')
+                    .click(function (e) {
+                        $('ul.navbar-nav > li > a')
+                            .removeClass('active');
+                        $(this).addClass('active');
+                    });
+            });
+            $('.mobile-view .navbar-nav a').on('click', function () {
+                $('.mobile-view .navbar-nav').find('li.active').removeClass('active');
+                $(this).parent('li').addClass('active');
+            });
+        </script>
+</body>
+
+</html>
